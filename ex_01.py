@@ -1,3 +1,6 @@
+# add . - todas arquivos
+# add nome_arquivo
+
 # : str - tipando as variáveis
 nome_produto: str = "Mesa de Escritório"
 quantidade_estoque: int = 10
