@@ -4,7 +4,10 @@ from schema import InventarioSchema
 
 
 # tipando como DataFrame - usar essa importacao: from pandas import DataFrame
-minha_tabela: DataFrame = pd.read_excel("data/inventario_mundo.xlsx")
+#minha_tabela: DataFrame = pd.read_excel("data/inventario_mundo.xlsx")
+
+# testando arquivo, sem uma coluna
+minha_tabela: DataFrame = pd.read_excel("data/inventario_mundo_sem_coluna.xlsx")
 
 # print(minha_tabela)
 
