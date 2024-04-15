@@ -1,10 +1,10 @@
 from datetime import datetime
 
-def validar_tipos(nome_produto, 
-                  quantidade_estoque,
-                  preco_unitario, 
-                  disponivel_venda, 
-                  data_validade):
+def validar_tipos(nome_produto: str, 
+                  quantidade_estoque: int,
+                  preco_unitario: float, 
+                  disponivel_venda: bool, 
+                  data_validade: datetime):
     
     # verificando se o nome do produto é str (retorna um bool)
      if not isinstance(nome_produto, str):
@@ -26,6 +26,5 @@ def validar_tipos(nome_produto,
      if not isinstance(data_validade, datetime):
           return False
      
-     # verificando se o nome do produto é str (retorna um bool)
-     if not isinstance(nome_produto, str):
-          return False
+     # Se todas as verificações passarem, retorna True
+     return True
